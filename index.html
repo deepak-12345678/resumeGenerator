@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Form</title>
+    <link rel="stylesheet" href="filedesign.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Kanit:wght@500&family=Kdam+Thmor+Pro&family=Noto+Sans+JP:wght@300&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital,wght@1,700&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Kanit:wght@500&family=Kdam+Thmor+Pro&family=Noto+Sans+JP:wght@300&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital,wght@1,700&family=Saira:wght@500&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Kanit:wght@500&family=Kdam+Thmor+Pro&family=Noto+Sans+JP:wght@300&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital,wght@1,700&family=Saira:wght@400;500&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8c1fa29ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favi.png" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="body">
+    <div class="mainbox">
+      <h1>RESUME GENERATOR</h1>
+      <div class="primarybox">
+        <form method="get" name="myForm" id="myForm">
+          <div class="formelement">
+            <label for="name"
+              ><b> Name: <br /> </b
+            ></label>
+            <input
+              type="text"
+              class="name"
+              placeholder="enter your full name"
+              autocomplete="off"
+            />
+            <b><p class="formerror" id="fname"></p></b>
+          </div>
+          <div class="formelement">
+            <label for="phno"
+              ><b>Phone Number: <br /> </b
+            ></label>
+            <input
+              type="number"
+              class="phno"
+              placeholder="enter your phone number"
+              autocomplete="off"
+            />
+            <b><p class="formerror" id="fphone"></p></b>
+          </div>
+          <div class="formelement">
+            <label for="email"
+              ><b> Email ID: <br /></b
+            ></label>
+            <input
+              type="email"
+              class="email"
+              placeholder="enter your Email ID"
+              autocomplete="off"
+            />
+            <b><p class="formerror"></p></b>
+          </div>
+          <div class="formelement">
+            <label for="address"
+              ><b>Residential Address: <br /></b
+            ></label>
+            <input
+              type="text"
+              class="address"
+              placeholder="enter your address"
+              autocomplete="off"
+            />
+            <b><p class="formerror" id="res"></p></b>
+          </div>
+          <div class="formelement">
+            <label for="education_degree"
+              ><b> Eduction Degree: <br /></b
+            ></label>
+            <input
+              type="text"
+              class="education_degree"
+              placeholder="Educational Degree"
+              autocomplete="off"
+              list="degree"
+            />
+            <datalist id="degree">
+              <option>PHD</option>
+              <option>B tech</option>
+              <option>M tech</option>
+            </datalist>
+          </div>
+          <div class="formelement">
+            <label for="other_degree"
+              >If your degree is not specified: <br
+            /></label>
+            <input
+              type="text"
+              class="other_degree"
+              placeholder="Please specify"
+              autocomplete="off"
+            />
+          </div>
+          <b><p class="formerror" id="degree"></p></b>
+
+          <div class="formelement">
+            <label for="university">University <br /> </label>
+            <input
+              type="text"
+              class="university"
+              placeholder="Enter your university"
+              autocomplete="off"
+            />
+            <b><p class="formerror" id="uni"></p></b>
+          </div>
+          <div class="formelement">
+            <div class="aff">
+              <div class="repeat">
+                <div class="king">
+                  <label for="affiliations">Affiliations <br /></label>
+                  <input
+                    type="text"
+                    class="affiliations"
+                    autocomplete="off"
+                    placeholder="Enter your Affiliations"
+                  />
+                  <ul class="new_list"></ul>
+                </div>
+              </div>
+              <b><p class="formerror" id="aff"></p></b>
+
+              <div class="button">
+                <input
+                  class="addmore"
+                  type="button"
+                  value="Add More"
+                  id="am"
+                /><input class="delete" value="Delete" type="button" id="det" />
+              </div>
+            </div>
+          </div>
+          <div class="formelement" id="pro">
+            <label for="prof">Professional summary <br /></label>
+            <input
+              type=""
+              class="prof"
+              autocomplete="off"
+              placeholder="enter a whole summary of your profession"
+            />
+            <b><p class="formerror" id="summary"></p></b>
+          </div>
+          <div class="formelement">
+            <div class="workhistory">
+              <div class="post">
+                <label for="postinput">
+                  Enter the post at which you were working <br />
+                </label>
+                <input
+                  type="text"
+                  placeholder="position at which you were working"
+                  class="postinput"
+                  autocomplete="off"
+                />
+                <ol class="ar1"></ol>
+                <b><p class="formerror" id="post"></p></b>
+              </div>
+              <div class="startdate">
+                <label for="startdateinput">Enter the start date <br /></label>
+                <input type="date" class="startdateinput" autocomplete="off" />
+                <ol class="ar2"></ol>
+                <b><p class="formerror" id="sd"></p></b>
+              </div>
+              <div class="location">
+                <label for="placeinput">
+                  Enter the location at which you worked <br />
+                </label>
+                <input
+                  type="text"
+                  placeholder="place at which you were working"
+                  class="locinput"
+                  autocomplete="off"
+                />
+                <ol class="ar3"></ol>
+                <b><p class="formerror" id="loc"></p></b>
+              </div>
+              <div class="jobdesc">
+                <div class="points">
+                  <label for="pointinput">Enter the point <br /></label>
+                  <input
+                    type="text"
+                    placeholder="Enter the points like point1|point2|point3 and so on"
+                    class="pointinput"
+                    autocomplete="off"
+                  />
+                  <!-- <div class="jobbut">
+                    <input
+                      type="button"
+                      class="jobadd"
+                      value="Add more job desc."
+                    />
+                    <input type="button" class="jobdel" value="Delete desc" />
+                    
+                    <b><p class="formerror" id="pt"></p></b>
+                  </div> -->
+                  <ol class="ar4"></ol>
+                </div>
+              </div>
+              <div class="pointbutton">
+                <input type="button" class="ptadd" value="Add More" />
+                <input type="button" class="delpt" value="Delete" />
+              </div>
+            </div>
+          </div>
+          <div class="formelementskills">
+            <div class="sklist">
+              <label for="skills">Skills <br /></label>
+              <input
+                type="text"
+                placeholder="enter your skills"
+                autocomplete="off"
+                class="skills"
+              />
+              <b><p class="formerror" id="sk"></p></b>
+              <ul class="bet"></ul>
+            </div>
+            <div class="skbut">
+              <input type="button" value="Add More" class="skadd" />
+              <input type="button" value="Delete" class="skdelete" />
+            </div>
+          </div>
+          <div class="finalbuttonpage">
+            <div class="pre">
+              <button>
+                <a href="temp.jpeg" download="image">Watch Preview</a>
+              </button>
+            </div>
+            <div class="submit">
+              <button class="sub">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="final">
+      <div class="leftside">
+        <div class="profsum">
+          <h1 class="james"></h1>
+          <hr />
+          <h1 class="pros">PROFESSIONAL SUMMARY</h1>
+          <hr />
+          <div class="insert1"></div>
+        </div>
+        <div class="wh">
+          <h1 class="whis">WORK HISTORY</h1>
+          <hr />
+          <ul class="l1"></ul>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="details">
+          <div class="live"></div>
+          <div class="phoneno"></div>
+          <div class="ema"></div>
+        </div>
+        <div class="skll">
+          <h1>SKILLS</h1>
+          <hr class="special" />
+          <ul class="lkj"></ul>
+        </div>
+        <div class="educa">
+          <h1>EDUCATION</h1>
+          <hr class="sp" />
+          <div class="insert2">
+            <div><b class="dege"></b></div>
+            <div class="uve"></div>
+          </div>
+        </div>
+        <div class="affila">
+          <h1>AFFILIATIONS</h1>
+          <hr class="sp" />
+          <div class="insert3">
+            <ul class="abc"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="down"><i class="fa-solid fa-download"></i></div>
+  </body>
+</html>
+<!-- document.querySelector(".ptadd").addEventListener("click",(event)=>{
+  event.preventDefault();
+  if 
+}) -->
+<!--  -->
